@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/**">
+    <title>City TRUCKER</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+    <div class="gfxtrucker-main-contain">
+        <div class="top-effect"></div>
+
+        <div class="gfxtrucker-createcomp-contain">
+            <h1>Şirket Aç</h1>
+            <p>City Rp</p>
+
+            <div class="createcomp-input-info">
+                <img src="assets/info-icon.png" alt="">
+                <p>Lütfen işletmenize en uygun ismi bulun</p>
+            </div>
+
+            <div class="createcomp-input-contain">
+                <img class="input-truck-icon" src="assets/truck-icon.png" alt="">
+                <input class="compNameInput" placeholder="Please enter buisness name" type="text" required>
+                <img class="input-status-icon" src="assets/input-status-yes.png" alt="">
+            </div>
+
+            <button class="createcomp-create-button">
+                <p>Anayla</p>
+
+                <img src="assets/createcomp-button-effect.png" alt="">
+            </button>
+        </div>
+
+        <div class="gfxtrucker-main-contents">
+            <div class="gfxtrucker-sidebar">
+                <h1 class="sidebar-compname">TIR KAMYONCU ARAZİSİ</h1>
+                <p class="sidebar-compdesc">Anlaşma, Sürme, Teslim Etme</p>
+
+                <div class="gfxtrucker-sidebar-button">
+                    <div class="sidebar-contain">
+                        <h1>MENÜ</h1>
+
+                        <button class="sidebar-create-button">
+                             <p>Şirket Oluştur</p>
+                        </button>
+                    </div>
+                    <button class="pageBtn" id="home">
+                        <img src="assets/home-button-icon.png" alt="">
+                        <h2>ANA SAYFA</h2>
+                    </button>
+                    <button class="pageBtn" id="jobs">
+                        <img src="assets/joblist-button-icon.png" alt="">
+                        <h2>İŞ LİSTESİ</h2>
+                    </button>
+                    <button class="pageBtn" id="workers">
+                        <img src="assets/employees-button-icon.png" alt="">
+                        <h2>ÇALIŞANLAR</h2>
+                    </button>
+                  
+                </div>
+            </div>
+
+            <div class="gfxtrucker-content">
+                <div class="content compSection">
+                    <div class="general-comp-infos">
+                        <img class="comp-image" src="assets/compimage.png" alt="">
+                        <div class="infos-contain">
+                            <div class="infos-contain-main-infos">
+                                <div class="texts">
+                                    <h1 class="sidebar-compname cmpName">ŞİRKET ADI</h1>
+                                    <p id="compInfoMoney"></p>
+                                </div>
+                                <div class="assets-counts-contain">
+                                    <div class="assets">
+                                        <img src="assets/garages-icon-forinfos.png" alt="">
+                                        <p class="compInfoGarageLevel">2</p>
+                                    </div>
+                                    <div class="assets">
+                                        <img src="assets/emp-icon-forinfos.png" alt="">
+                                        <p class="compInfoEmployeeCount">100</p>
+                                    </div>
+                                    <div class="assets">
+                                        <img src="assets/trucks-icon-forinfos.png" alt="">
+                                        <p class="compInfoTrucks">20</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="infos-depositinput-contain">
+                                <div class="input-contain">
+                                    <p>BURAYA YAZIN</p>
+                                    <input id="moneyInput" placeholder="1000$" type="number">
+                                </div>
+
+                                <button id="depositMoney">
+                                    <p>para yatırmak</p>
+                                </button>
+                                <button id="withdrawMoney">
+                                    <p>para çekmek</p>
+                                </button>
+                            </div>
+
+                            <div class="infos-drivers-contain">
+                                <h1 class="drivers-title">ŞİRKET SÜRÜCÜLERİ</h1>
+                                 <div class="drivers">
+                                    <!-- <div class="driver">
+                                        <img src="assets/emoployes-icon.png" alt="">
+                                        <div class="texts">
+                                            <h1>NITROS</h1>
+                                            <p>COMP NAME</p>
+                                        </div>
+                                    </div> -->
+
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="assets-comp-infos">
+                        <div class="assets-garages">
+                            <h1 class="assets-title">BİLGİLER</h1>
+                            <div class="garages-contain garages-comp-contain">
+                                <div class="garage">
+                                    <div class="garage-info">
+                                        <h1 class="-garage-infos-title">ÇALIŞAN İŞÇİLER: </h1>
+                                        <p class="-garage-infos-desc">BOŞ YUVA: </p>
+                                        <p class="-garage-infos-desc">SEVİYE YÜKSELTME HAKKI: </p>
+                                        <div class="lvl-contain">
+                                            <div class="lvl">
+                                                <p>44 LEVEL</p>
+                                            </div>
+                                            <button class="lvl pageBtn" >
+                                                <p>GARAJI YÜKSELT</p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                         <div class="assets-garages ">
+                            <div class="assets-garages-logo"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-jobs"> <!--  isci -->
+                    <div class="jobs-contain">
+                        <h1 class="jobs-title">ÇALIŞANI İŞE AL</h1>
+                        <div class="jobs-boxs hire-employee">
+                            <!-- <div class="jobs-box">
+                                <div class="jobs-boxs-player">
+                                    <div class="jobs-player">
+                                        <img src="assets/trucker-garage-image.png" alt="">
+                                        <div class="jobs-player-buttons">
+                                            <button class="player-button -stop-job">
+                                                <p>STOP</p>
+                                            </button>
+                                            <button class="player-button -kickjob-job">
+                                                <p>KICK JOB</p>
+                                            </button>
+                                             <button class="player-button -hire-job"><p>KICK JOB</p></button> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="jobs-contain">
+                                     <div class="jobs-header">
+                                         <h1 class="username">USERNAME</h1>
+                                        <p class="surname">175 LEVEL</p>
+                                        <div class="level-progress">
+                                            <p>1775 / 2550 XP</p>
+                                        
+                                        </div> 
+                                    </div>
+
+                                    <div class="jobs-content">
+                                        <div class="jobs-value">
+                                            <h1>Worker Infos</h1>
+                                            <div class="value-contain">
+                                                <div class="value-boxs">
+                                                    <h2>ID</h2>
+                                                    <p>3131</p>
+                                                </div>
+                                                <div class="value-boxs">
+                                                    <h2>Status</h2>
+                                                    <p>31de</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="jobs-value">
+                                            <h1>TITLE</h1>
+                                            <div class="value-contain">
+                                                <div class="value-boxs">
+                                                    <h2>Status</h2>
+                                                    <p>31de</p>
+                                                </div>
+                                                <div class="value-boxs">
+                                                    <h2>Status</h2>
+                                                    <p>31de</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div> -->
+                        </div>
+
+                    </div>
+
+                    <div class="jobs-contain ">
+                        <h1 class="jobs-title">ÇALIŞANLARIM</h1>
+
+                        <div class="jobs-boxs my-workers">
+                           <!-- <div class="jobs-box">
+                                <div class="jobs-boxs-player">
+                                    <div class="jobs-player">
+                                        <img src="assets/trucker-garage-image.png" alt="">
+                                        <div class="jobs-player-buttons">
+                                            <button class="player-button -stop-job">
+                                                <p>STOP</p>
+                                            </button>
+                                            <button class="player-button -kickjob-job">
+                                                <p>KICK JOB</p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="jobs-contain">
+                                    <div class="jobs-header">
+                                        <h1>USERNAME</h1>
+                                        <p>175 LEVEL</p>
+                                        <div class="level-progress">
+                                            <p>1775 / 2550 XP</p>
+                                           
+                                        </div>
+                                    </div>
+
+                                    <div class="jobs-content">
+                                        <div class="jobs-value">
+                                            <h1>Worker Infos</h1>
+                                            <div class="value-contain">
+                                                <div class="value-boxs">
+                                                    <h2>ID</h2>
+                                                    <p>3131</p>
+                                                </div>
+                                                <div class="value-boxs">
+                                                    <h2>Status</h2>
+                                                    <p>31de</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="jobs-value">
+                                            <h1>TITLE</h1>
+                                            <div class="value-contain">
+                                                <div class="value-boxs">
+                                                    <h2>Status</h2>
+                                                    <p>31de</p>
+                                                </div>
+                                                <div class="value-boxs">
+                                                    <h2>Status</h2>
+                                                    <p>31de</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-employess"> <!-- isler  -->
+                    <div class="employes-contain">
+                        <h1 class="employes-title">İŞ LİSTESİ</h1>
+                        <div class="employes-boxs list1">
+                            <!-- <div class="emp-box">
+                                <div class="truck-img-contain">
+                                    <img src="assets/realistic-truck.png" alt="">
+                                </div>
+                                <div class="job-general-infos">
+                                    <div class="job-infos">
+                                        <h1>Boş Palet ( 22 t )</h1>
+                                        <p>İstendiği Aralık : Mon 9.10 - Mon 16.00</p>
+                                        <p>Geçerli Süre : Mon 9.10 - Mon 16.00</p>
+                                        <div class="job-info-locations">
+                                            <h2>Rotterdam (NL)</h2>
+                                            <img src="assets/location-icon.png" alt="">
+                                            <h2>Manchester (GB)</h2>
+                                        </div>
+                                    </div>
+                                    <div class="job-financial-infos">
+                                        <h1 class="financial-money">4.545 $ <img src="assets/cursor-pointer.png" alt="">
+                                        </h1>
+                                        <p class="financial-kmmoney">14.10 $ / km</p>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <!-- -->
+                        </div>
+                    </div>
+                    <div class="employes-contain">
+                        <h1 class="employes-title">İŞ LİSTESİ</h1>
+                        <div class="employes-boxs  list2">
+                            <!-- <div class="emp-box">
+                                <div class="truck-img-contain">
+                                    <img src="assets/realistic-truck.png" alt="">
+                                </div>
+                                <div class="job-general-infos">
+                                    <div class="job-infos">
+                                        <h1>Boş Palet ( 22 t )</h1>
+                                        <p>İstendiği Aralık : Mon 9.10 - Mon 16.00</p>
+                                        <p>Geçerli Süre : Mon 9.10 - Mon 16.00</p>
+                                        <div class="job-info-locations">
+                                            <h2>Rotterdam (NL)</h2>
+                                            <img src="assets/location-icon.png" alt="">
+                                            <h2>Manchester (GB)</h2>
+                                        </div>
+                                    </div>
+                                    <div class="job-financial-infos">
+                                        <h1 class="financial-money">4.545 $</h1>
+                                        <p class="financial-kmmoney">14.10 $ / km</p>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <img class="gfxtrucker-bgeffect" src="assets/uiinsideeffectbg.png" alt="">
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
