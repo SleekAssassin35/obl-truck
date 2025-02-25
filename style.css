@@ -1,0 +1,1289 @@
+@charset "UTF-8";
+body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url(assets/uibg.png);
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: Opinion Pro Cn;
+  src: url(assets/fonts/Opinion_Pro_Condensed_W05_Bold.ttf);
+}
+@font-face {
+  font-family: Steelfish;
+  src: url(assets/fonts/steelfish/steelfish_bd.otf);
+}
+@font-face {
+  font-family: Satoshi;
+  src: url(assets/fonts/satoshi/Satoshi-Bold_0.otf);
+}
+.gfxtrucker-main-contain {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 160vh;
+  height: 87vh;
+  background-color: red;
+  border-radius: 32px;
+  border: 1.2px solid #444;
+  background: rgba(9, 9, 9, 0.96);
+  overflow: hidden;
+}
+.gfxtrucker-main-contain .gfxtrucker-createcomp-contain {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+.gfxtrucker-main-contain .gfxtrucker-createcomp-contain h1 {
+  color: #969696;
+  font-family: Steelfish;
+  font-size: 105.634px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -1.796px;
+  margin: 7vh 0vh 0vh 0vh;
+}
+.gfxtrucker-main-contain .gfxtrucker-createcomp-contain p {
+  color: #575757;
+  text-align: center;
+  font-family: Satoshi;
+  font-size: 26.48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.45px;
+  margin: 0;
+}
+.gfxtrucker-main-contain .gfxtrucker-createcomp-contain .createcomp-input-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 71.6vh;
+  height: 6.8vh;
+  border-radius: 11.072px;
+  border: 1.23px solid #414141;
+  background: rgba(217, 217, 217, 0.01);
+  box-shadow: -5.23262px 5.23262px 5.23262px 0px rgba(255, 255, 255, 0.04) inset, 5.23262px -5.23262px 5.23262px 0px rgba(75, 75, 75, 0.04) inset;
+  -webkit-backdrop-filter: blur(28.7794284821px);
+          backdrop-filter: blur(28.7794284821px);
+  margin-top: 5vh;
+}
+.gfxtrucker-main-contain .gfxtrucker-createcomp-contain .createcomp-input-info img {
+  position: relative;
+  width: 3.5vh;
+  margin: 0vh 2vh 0vh 0vh;
+}
+.gfxtrucker-main-contain .gfxtrucker-createcomp-contain .createcomp-input-info p {
+  color: #969696;
+  font-family: Opinion Pro Cn;
+  font-size: 29.889px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.508px;
+}
+.gfxtrucker-main-contain .gfxtrucker-createcomp-contain .createcomp-input-contain {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 71.6vh;
+  height: 11.6vh;
+  border-radius: 6.433px;
+  border: 1.49px solid rgba(126, 126, 126, 0.19);
+  background: rgba(183, 183, 183, 0.03);
+  box-shadow: 0px 0px 32.879px 0px #000 inset;
+  margin-top: 2vh;
+}
+.gfxtrucker-main-contain .gfxtrucker-createcomp-contain .createcomp-input-contain .input-truck-icon {
+  position: relative;
+  width: 5.4vh;
+  height: 5.4vh;
+  margin-left: 2.5vh;
+}
+.gfxtrucker-main-contain .gfxtrucker-createcomp-contain .createcomp-input-contain input {
+  position: relative;
+  width: 70%;
+  height: 100%;
+  color: #6F6F6F;
+  font-family: Opinion Pro Cn;
+  font-size: 30.245px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.548px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  margin: 0vh 2vh;
+}
+.gfxtrucker-main-contain .gfxtrucker-createcomp-contain .createcomp-input-contain .input-status-icon {
+  position: relative;
+  width: 3vh;
+  margin-left: 3vh;
+}
+.gfxtrucker-main-contain .gfxtrucker-createcomp-contain .createcomp-create-button {
+  position: relative;
+  width: 71.6vh;
+  height: 6.8vh;
+  overflow: hidden;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  margin-top: 2vh;
+  background: linear-gradient(90deg, #F8991D 3.21%, #FFD002 104.36%);
+}
+.gfxtrucker-main-contain .gfxtrucker-createcomp-contain .createcomp-create-button::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -4.5vh;
+  transform: translateX(-50%) rotate(45deg);
+  width: 5vh;
+  height: 5vh;
+  border-radius: 3px;
+  background-color: #000000;
+}
+.gfxtrucker-main-contain .gfxtrucker-createcomp-contain .createcomp-create-button p {
+  position: relative;
+  color: #0A0A0A;
+  font-family: Opinion Pro Cn;
+  font-size: 35.896px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.61px;
+  z-index: 99;
+  margin: 0;
+}
+.gfxtrucker-main-contain .gfxtrucker-createcomp-contain .createcomp-create-button img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  height: 90%;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-sidebar {
+  position: relative;
+  width: 22%;
+  height: 100%;
+  float: left;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-sidebar .sidebar-compname {
+  position: relative;
+  font-family: Steelfish;
+  font-size: 60.212px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -1.024px;
+  background: linear-gradient(89deg, #969696 -3.54%, #969696 92.42%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-sidebar .sidebar-compdesc {
+  color: #575757;
+  text-align: center;
+  font-family: Satoshi;
+  font-size: 18.146px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.308px;
+  text-align: left;
+  margin: 0;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-sidebar .gfxtrucker-sidebar-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  width: 80%;
+  height: 25vh;
+  margin-top: 5vh;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-sidebar .gfxtrucker-sidebar-button .sidebar-contain {
+  display: flex;
+  align-items: center;
+  gap: 2vh;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 3vh;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-sidebar .gfxtrucker-sidebar-button .sidebar-contain h1 {
+  color: #898989;
+  font-family: Opinion Pro Cn;
+  font-size: 1.9vh;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.977px;
+  margin: 0;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-sidebar .gfxtrucker-sidebar-button .sidebar-contain .sidebar-create-button {
+  position: relative;
+  height: 100%;
+  border-radius: 4.099px;
+  background: linear-gradient(90deg, #F7971E 0%, #FFD200 100%);
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-sidebar .gfxtrucker-sidebar-button .sidebar-contain .sidebar-create-button p {
+  color: #000;
+  font-family: Opinion Pro Cn;
+  font-size: 1.4vh;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.977px;
+  padding: 0vh 1vh 0vh 1vh;
+  margin: 0 !important;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-sidebar .gfxtrucker-sidebar-button p {
+  color: #898989;
+  font-family: Opinion Pro Cn;
+  font-size: 19.539px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.977px;
+  margin: 0 !important;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-sidebar .gfxtrucker-sidebar-button .-button-active {
+  border-radius: 4.099px;
+  background: linear-gradient(90deg, #F7971E 0%, #FFD200 100%);
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-sidebar .gfxtrucker-sidebar-button .-button-active h2 {
+  color: #000;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-sidebar .gfxtrucker-sidebar-button .-button-active img {
+  filter: brightness(0%);
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-sidebar .gfxtrucker-sidebar-button button {
+  display: flex;
+  flex-direction: row;
+  gap: 1.2vh;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 5.6vh;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  transition: 500ms all;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-sidebar .gfxtrucker-sidebar-button button .-create-comp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 1vh;
+  width: 5vh;
+  height: 3.2vh;
+  border-radius: 6.514px;
+  border: 1px solid #FFAE00;
+  background: #131313;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-sidebar .gfxtrucker-sidebar-button button .-create-comp p {
+  color: #898989;
+  font-family: Opinion Pro Cn;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  line-height: 10px;
+  /* 30.8px */
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-sidebar .gfxtrucker-sidebar-button button:hover {
+  border-radius: 4.099px;
+  background: #F7971E;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-sidebar .gfxtrucker-sidebar-button button:hover h2 {
+  color: #000;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-sidebar .gfxtrucker-sidebar-button button:hover img {
+  filter: brightness(0%);
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-sidebar .gfxtrucker-sidebar-button button img {
+  position: relative;
+  width: 2vh;
+  margin-left: 1vh;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-sidebar .gfxtrucker-sidebar-button button h2 {
+  color: #898989;
+  font-family: Opinion Pro Cn;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  /* 30.8px */
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content {
+  position: relative;
+  margin-top: 7vh;
+  width: 118vh;
+  height: 90%;
+  float: right;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-title {
+  position: relative;
+  color: #8A8A8A;
+  text-align: right;
+  font-family: Steelfish;
+  font-size: 60.212px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -1.024px;
+  width: 100%;
+  margin: 0;
+  text-align: right;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 85%;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .general-comp-infos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 63.5%;
+  height: 100%;
+  border-radius: 6.433px;
+  border: 1.49px solid rgba(126, 126, 126, 0.19);
+  background: rgba(183, 183, 183, 0.03);
+  box-shadow: 0px 0px 32.879px 0px #000 inset;
+  float: left;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .general-comp-infos .comp-image {
+  position: relative;
+  width: 70vh;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .general-comp-infos .infos-contain {
+  position: relative;
+  width: 93%;
+  height: 26vh;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .general-comp-infos .infos-contain .infos-contain-main-infos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 7vh;
+  margin-top: 1vh;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .general-comp-infos .infos-contain .infos-contain-main-infos .texts {
+  position: relative;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .general-comp-infos .infos-contain .infos-contain-main-infos .texts h1 {
+  position: relative;
+  font-family: Opinion Pro Cn;
+  font-size: 33.934px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.577px;
+  background: linear-gradient(89deg, #969696 -3.54%, #969696 92.42%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .general-comp-infos .infos-contain .infos-contain-main-infos .texts p {
+  position: relative;
+  color: #575757;
+  font-family: Opinion Pro Cn;
+  font-size: 16.814px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.286px;
+  margin: 0;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .general-comp-infos .infos-contain .infos-contain-main-infos .assets-counts-contain {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1vh;
+  flex-direction: row;
+  position: relative;
+  width: 35vh;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .general-comp-infos .infos-contain .infos-contain-main-infos .assets-counts-contain .assets {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1vh;
+  position: relative;
+  height: 3.2vh;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 6.514px;
+  border: 1px solid #FFAE00;
+  background: rgba(176, 176, 176, 0.07);
+  padding: 0vh 2vh 0vh 2vh;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .general-comp-infos .infos-contain .infos-contain-main-infos .assets-counts-contain .assets img {
+  position: relative;
+  height: 1.8vh;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .general-comp-infos .infos-contain .infos-contain-main-infos .assets-counts-contain .assets p {
+  position: relative;
+  color: #FFAE00;
+  font-family: Opinion Pro Cn;
+  font-size: 17.172px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.292px;
+  margin: 0;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .general-comp-infos .infos-contain .infos-depositinput-contain {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  height: 5.3Vh;
+  margin-top: 1vh;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .general-comp-infos .infos-contain .infos-depositinput-contain .input-contain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 32%;
+  height: 100%;
+  border-radius: 0.825px;
+  border: 0.825px solid #353535;
+  background: rgba(217, 217, 217, 0.02);
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .general-comp-infos .infos-contain .infos-depositinput-contain .input-contain::before {
+  content: "";
+  position: absolute;
+  width: 0.3vh;
+  height: 70%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 0px 2px 2px 0px;
+  background: #595959;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .general-comp-infos .infos-contain .infos-depositinput-contain .input-contain p {
+  position: relative;
+  color: #6B6B6B;
+  font-family: Opinion Pro Cn;
+  font-size: 11.14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.189px;
+  margin: 0vh 1vh;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .general-comp-infos .infos-contain .infos-depositinput-contain .input-contain input {
+  position: relative;
+  width: 90%;
+  height: 3vh;
+  color: #BDBDBD;
+  font-family: Opinion Pro Cn;
+  font-size: 20.912px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.355px;
+  outline: none;
+  border: none;
+  margin: 0vh 1vh;
+  background-color: transparent;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .general-comp-infos .infos-contain .infos-depositinput-contain button {
+  position: relative;
+  width: 32%;
+  height: 100%;
+  outline: none;
+  border: none;
+  border-radius: 1.085px;
+  background: linear-gradient(90deg, #BFBFBF 3.21%, #959595 104.36%);
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .general-comp-infos .infos-contain .infos-depositinput-contain button p {
+  position: relative;
+  color: #0A0A0A;
+  text-align: center;
+  font-family: Opinion Pro Cn;
+  font-size: 19.478px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.331px;
+  margin: 0;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .general-comp-infos .infos-contain .infos-drivers-contain {
+  position: relative;
+  width: 100%;
+  height: 12vh;
+  border-radius: 0.825px;
+  border: 0.825px solid #353535;
+  background: rgba(217, 217, 217, 0.02);
+  margin: 1.5vh 0vh;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .general-comp-infos .infos-contain .infos-drivers-contain .drivers-title {
+  color: #6B6B6B;
+  font-family: Opinion Pro Cn;
+  font-size: 11.14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.189px;
+  margin-left: 1vh;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .general-comp-infos .infos-contain .infos-drivers-contain .drivers {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+  grid-gap: 5px;
+  /* İhtiyaca göre boşluk ekleyebilirsiniz */
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 97%;
+  height: 70%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .general-comp-infos .infos-contain .infos-drivers-contain .drivers::-webkit-scrollbar {
+  display: none;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .general-comp-infos .infos-contain .infos-drivers-contain .drivers .driver {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 3.94vh;
+  border: 0.825px solid #383838;
+  background: rgba(217, 217, 217, 0.03);
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .general-comp-infos .infos-contain .infos-drivers-contain .drivers .driver img {
+  position: relative;
+  width: 2.4vh;
+  margin-left: 1vh;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .general-comp-infos .infos-contain .infos-drivers-contain .drivers .driver h1 {
+  color: #FFF;
+  font-family: Opinion Pro Cn;
+  font-size: 10.756px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.183px;
+  margin: 0vh 0vh 0vh 0.5vh;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .general-comp-infos .infos-contain .infos-drivers-contain .drivers .driver p {
+  color: #979797;
+  font-family: Opinion Pro Cn;
+  font-size: 5.623px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.096px;
+  margin: 0vh 0vh 0vh 0.5vh;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .assets-comp-infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  width: 33.5%;
+  height: 100%;
+  float: right;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .assets-comp-infos .assets-title {
+  font-family: Opinion Pro Cn;
+  font-size: 23.554px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  background: linear-gradient(89deg, #969696 -3.54%, #969696 92.42%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 2vh 0vh 0vh 2vh;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .assets-comp-infos .assets-desc {
+  color: #575757;
+  font-family: Opinion Pro Cn;
+  font-size: 11.671px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.198px;
+  margin: 0vh 0vh 0vh 2vh;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .assets-comp-infos .assets-garages {
+  position: relative;
+  width: 100%;
+  height: 47%;
+  border-radius: 6.433px;
+  border: 1.49px solid rgba(126, 126, 126, 0.19);
+  background: rgba(183, 183, 183, 0.03);
+  box-shadow: 0px 0px 32.879px 0px #000 inset;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .assets-comp-infos .assets-garages .assets-garages-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 97%;
+  height: 95%;
+  background-image: url(assets/logo.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .assets-comp-infos .assets-garages .garages-contain {
+  position: relative;
+  width: 90%;
+  height: 70%;
+  margin: 1vh auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .assets-comp-infos .assets-garages .garages-contain::-webkit-scrollbar {
+  display: none;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .assets-comp-infos .assets-garages .garages-contain .garage {
+  position: relative;
+  width: 100%;
+  height: 8vh;
+  margin-bottom: 1vh;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .assets-comp-infos .assets-garages .garages-contain .garage .garage-img {
+  position: relative;
+  width: 8vh;
+  height: 100%;
+  border-radius: 2.307px;
+  border: 0.534px solid rgba(126, 126, 126, 0.19);
+  background: rgba(183, 183, 183, 0.03);
+  box-shadow: 0px 0px 11.79129px 0px #000 inset;
+  float: left;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .assets-comp-infos .assets-garages .garages-contain .garage .garage-img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 90%;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .assets-comp-infos .assets-garages .garages-contain .garage .garage-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 2.307px;
+  border: 0.534px solid rgba(126, 126, 126, 0.19);
+  background: rgba(183, 183, 183, 0.03);
+  box-shadow: 0px 0px 11.79129px 0px #000 inset;
+  float: right;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .assets-comp-infos .assets-garages .garages-contain .garage .garage-info .-garage-infos-title {
+  color: #FFAE00;
+  font-family: Opinion Pro Cn;
+  font-size: 1.4vh;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.171px;
+  margin: 0.5vh 0vh 0vh 1vh;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .assets-comp-infos .assets-garages .garages-contain .garage .garage-info .-garage-infos-desc {
+  color: #8C8C8C;
+  font-family: Opinion Pro Cn;
+  font-size: 1.2vh;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.135px;
+  margin: 0vh 0vh 0vh 1vh;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .assets-comp-infos .assets-garages .garages-contain .garage .garage-info .-trucks-infos-title {
+  color: #FFAE00;
+  font-family: Opinion Pro Cn;
+  font-size: 1.7vh;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.273px;
+  margin: 0.5vh 0vh 0vh 1vh;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .assets-comp-infos .assets-garages .garages-contain .garage .garage-info .-trucks-infos-desc {
+  color: #6A6A6A;
+  font-family: Opinion Pro Cn;
+  font-size: 1.4vh;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.156px;
+  margin: 0vh 0vh 0vh 1vh;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .assets-comp-infos .assets-garages .garages-contain .garage .garage-info .lvl-contain {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1vh;
+  width: 8vh;
+  height: 4vh;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .assets-comp-infos .assets-garages .garages-contain .garage .garage-info .lvl-contain .lvl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 50%;
+  border-radius: 2.855px;
+  background: rgba(255, 174, 0, 0.13);
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .assets-comp-infos .assets-garages .garages-contain .garage .garage-info .lvl-contain .lvl p {
+  color: #FFAE00;
+  font-family: Opinion Pro Cn;
+  font-size: 11.129px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.189px;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .assets-comp-infos .assets-garages .garages-contain .garage .garage-info .lvl-contain button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 1.75vh;
+  border-radius: 2.855px;
+  outline: none;
+  border: none;
+  background: rgba(189, 255, 0, 0.13);
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .assets-comp-infos .assets-garages .garages-contain .garage .garage-info .lvl-contain button p {
+  color: #BDFF00;
+  font-family: Opinion Pro Cn;
+  font-size: 8.525px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.128px;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content .assets-comp-infos .assets-trucks {
+  position: relative;
+  width: 100%;
+  height: 47%;
+  border-radius: 6.433px;
+  border: 1.49px solid rgba(126, 126, 126, 0.19);
+  background: rgba(183, 183, 183, 0.03);
+  box-shadow: 0px 0px 32.879px 0px #000 inset;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-employess {
+  display: none;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  height: 85%;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-employess .employes-contain {
+  position: relative;
+  width: 49%;
+  height: 100%;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-employess .employes-contain .employes-title {
+  position: relative;
+  color: #898989;
+  font-family: Opinion Pro Cn;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  margin: 0;
+  /* 30.8px */
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-employess .employes-contain .employes-boxs {
+  position: relative;
+  width: 100%;
+  height: 95%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-employess .employes-contain .employes-boxs::-webkit-scrollbar {
+  display: none;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-employess .employes-contain .employes-boxs .emp-box {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  height: 10.6vh;
+  margin-bottom: 1vh;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-employess .employes-contain .employes-boxs .emp-box .truck-img-contain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 12vh;
+  height: 100%;
+  border-radius: 3.75px;
+  border: 0.869px solid rgba(126, 126, 126, 0.19);
+  background: rgba(183, 183, 183, 0.03);
+  box-shadow: 0px 0px 19.1649px 0px #000 inset;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-employess .employes-contain .employes-boxs .emp-box .truck-img-contain img {
+  position: relative;
+  width: 8vh;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-employess .employes-contain .employes-boxs .emp-box .job-general-infos {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 77%;
+  height: 100%;
+  border-radius: 3.75px;
+  border: 0.869px solid rgba(126, 126, 126, 0.19);
+  background: rgba(183, 183, 183, 0.03);
+  box-shadow: 0px 0px 19.1649px 0px #000 inset;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-employess .employes-contain .employes-boxs .emp-box .job-general-infos .job-infos {
+  position: relative;
+  width: 30vh;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-left: 1.5vh;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-employess .employes-contain .employes-boxs .emp-box .job-general-infos .job-infos h1 {
+  color: #FFAE00;
+  font-family: Opinion Pro Cn;
+  font-size: 16.31px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.277px;
+  margin: 0;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-employess .employes-contain .employes-boxs .emp-box .job-general-infos .job-infos p {
+  color: #8C8C8C;
+  font-family: Opinion Pro Cn;
+  font-size: 12.868px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.219px;
+  margin: 0;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-employess .employes-contain .employes-boxs .emp-box .job-general-infos .job-infos .job-info-locations {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 2.5vh;
+  border-radius: 3.627px;
+  background: rgba(217, 217, 217, 0.12);
+  margin-top: 0.8vh;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-employess .employes-contain .employes-boxs .emp-box .job-general-infos .job-infos .job-info-locations h2 {
+  color: #C9C9C9;
+  font-family: Opinion Pro Cn;
+  font-size: 12.868px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.219px;
+  margin: 0vh 0.8vh 0vh 0.8vh;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-employess .employes-contain .employes-boxs .emp-box .job-general-infos .job-infos .job-info-locations img {
+  position: relative;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-employess .employes-contain .employes-boxs .emp-box .job-general-infos .job-financial-infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  right: 1.5vh;
+  width: 12vh;
+  height: 6vh;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-employess .employes-contain .employes-boxs .emp-box .job-general-infos .job-financial-infos .financial-money {
+  color: #FFAE00;
+  font-family: Opinion Pro Cn;
+  font-size: 18.088px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.308px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 55%;
+  border-radius: 4.64px;
+  background: rgba(255, 174, 0, 0.13);
+  margin: 0;
+  transition: all ease 500ms;
+  cursor: pointer;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-employess .employes-contain .employes-boxs .emp-box .job-general-infos .job-financial-infos .financial-money img {
+  position: absolute;
+  right: 0.3vh;
+  bottom: 0.6vh;
+  width: 2vh;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-employess .employes-contain .employes-boxs .emp-box .job-general-infos .job-financial-infos .financial-money:hover {
+  background: rgba(255, 174, 0, 0.3);
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-employess .employes-contain .employes-boxs .emp-box .job-general-infos .job-financial-infos .financial-kmmoney {
+  color: #B0B0B0;
+  font-family: Opinion Pro Cn;
+  font-size: 12.231px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.208px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 35%;
+  border-radius: 4.64px;
+  background: rgba(176, 176, 176, 0.13);
+  margin: 0;
+  cursor: pointer;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-jobs {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  height: 85%;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-jobs .jobs-contain {
+  position: relative;
+  width: 49%;
+  height: 100%;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-jobs .jobs-contain .jobs-title {
+  position: relative;
+  color: #898989;
+  font-family: Opinion Pro Cn;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  margin: 0;
+  /* 30.8px */
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-jobs .jobs-contain .jobs-boxs {
+  position: relative;
+  width: 100%;
+  height: 95%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-jobs .jobs-contain .jobs-boxs::-webkit-scrollbar {
+  display: none;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-jobs .jobs-contain .jobs-boxs .jobs-box {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  height: 10.6vh;
+  margin-bottom: 1vh;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-jobs .jobs-contain .jobs-boxs .jobs-box .jobs-boxs-player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 14vh;
+  height: 100%;
+  border-radius: 3.75px;
+  border: 0.869px solid rgba(126, 126, 126, 0.19);
+  background: rgba(183, 183, 183, 0.03);
+  box-shadow: 0px 0px 19.1649px 0px #000 inset;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-jobs .jobs-contain .jobs-boxs .jobs-box .jobs-boxs-player .jobs-player {
+  position: absolute;
+  width: 87%;
+  height: 85%;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-jobs .jobs-contain .jobs-boxs .jobs-box .jobs-boxs-player .jobs-player .jobs-player-buttons {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5vh;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-jobs .jobs-contain .jobs-boxs .jobs-box .jobs-boxs-player .jobs-player .jobs-player-buttons .-stop-job {
+  background: #FFAE00;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-jobs .jobs-contain .jobs-boxs .jobs-box .jobs-boxs-player .jobs-player .jobs-player-buttons .-kickjob-job {
+  background: #FF3737;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-jobs .jobs-contain .jobs-boxs .jobs-box .jobs-boxs-player .jobs-player .jobs-player-buttons .-hire-job {
+  background: rgb(0, 255, 119);
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-jobs .jobs-contain .jobs-boxs .jobs-box .jobs-boxs-player .jobs-player .jobs-player-buttons .player-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-jobs .jobs-contain .jobs-boxs .jobs-box .jobs-boxs-player .jobs-player .jobs-player-buttons .player-button p {
+  color: #000;
+  font-family: Opinion Pro Cn;
+  font-size: 1.4vh;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: -0.194px;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-jobs .jobs-contain .jobs-boxs .jobs-box .jobs-boxs-player .jobs-player img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-jobs .jobs-contain .jobs-boxs .jobs-box .jobs-contain {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  width: 73%;
+  height: 100%;
+  border-radius: 3.773px;
+  border: 0.874px solid rgba(126, 126, 126, 0.19);
+  background: rgba(183, 183, 183, 0.03);
+  box-shadow: 0px 0px 19.28393px 0px #000 inset;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-jobs .jobs-contain .jobs-boxs .jobs-box .jobs-contain .jobs-header {
+  position: relative;
+  width: 15vh;
+  height: 80%;
+  margin-left: 1vh;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-jobs .jobs-contain .jobs-boxs .jobs-box .jobs-contain .jobs-header h1 {
+  color: #FFAE00;
+  font-family: Opinion Pro Cn;
+  font-size: 25.852px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.439px;
+  margin: 0;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-jobs .jobs-contain .jobs-boxs .jobs-box .jobs-contain .jobs-header p {
+  color: #FFF;
+  font-family: Opinion Pro Cn;
+  font-size: 14.784px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.251px;
+  margin: 0;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-jobs .jobs-contain .jobs-boxs .jobs-box .jobs-contain .jobs-header .level-progress {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  height: 3.3vh;
+  margin-top: 1vh;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-jobs .jobs-contain .jobs-boxs .jobs-box .jobs-contain .jobs-header .level-progress p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 2.5vh;
+  border-radius: 1.029px;
+  background: rgba(217, 217, 217, 0.08);
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-jobs .jobs-contain .jobs-boxs .jobs-box .jobs-contain .jobs-header .level-progress .progress-bar {
+  position: relative;
+  width: 100%;
+  height: 0.4vh;
+  border-radius: 0px 0px 1.029px 1.029px;
+  background: rgba(217, 217, 217, 0.09);
+  overflow: hidden;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-jobs .jobs-contain .jobs-boxs .jobs-box .jobs-contain .jobs-header .level-progress .progress-bar .path {
+  position: relative;
+  width: 60%;
+  height: 100%;
+  border-radius: 0px 0px 0px 1.029px;
+  background: #FFAE00;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-jobs .jobs-contain .jobs-boxs .jobs-box .jobs-contain .jobs-content {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 22vh;
+  height: 75%;
+  margin-left: 2vh;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-jobs .jobs-contain .jobs-boxs .jobs-box .jobs-contain .jobs-content .jobs-value {
+  position: relative;
+  width: 47%;
+  height: 100%;
+  border-radius: 3px;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-jobs .jobs-contain .jobs-boxs .jobs-box .jobs-contain .jobs-content .jobs-value h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 2.4vh;
+  border-radius: 3.019px 3.019px 0px 0px;
+  background: rgba(0, 0, 0, 0.28);
+  color: #B5B5B5;
+  font-family: Opinion Pro Cn;
+  font-size: 10.928px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.186px;
+  margin: 0;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-jobs .jobs-contain .jobs-boxs .jobs-box .jobs-contain .jobs-content .jobs-value .value-contain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4vh;
+  position: relative;
+  width: 100%;
+  height: 70%;
+  border-radius: 3.019px;
+  background: rgba(217, 217, 217, 0.1);
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-jobs .jobs-contain .jobs-boxs .jobs-box .jobs-contain .jobs-content .jobs-value .value-contain .value-boxs {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 90%;
+  height: 2vh;
+  border-radius: 1.006px;
+  background: rgba(217, 217, 217, 0.18);
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-jobs .jobs-contain .jobs-boxs .jobs-box .jobs-contain .jobs-content .jobs-value .value-contain .value-boxs h2 {
+  position: absolute;
+  left: 0.5vh;
+  color: #DFDFDF;
+  font-family: Opinion Pro Cn;
+  font-size: 1vh;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.148px;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-jobs .jobs-contain .jobs-boxs .jobs-box .jobs-contain .jobs-content .jobs-value .value-contain .value-boxs p {
+  position: absolute;
+  right: 0.5vh;
+  color: #DFDFDF;
+  font-family: Opinion Pro Cn;
+  font-size: 1vh;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.148px;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-jobs .jobs-contain .jobs-boxs .jobs-box .jobs-contain .jobs-content .jobs-value .value-contain .value-boxs .skill-bar {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  right: 0.5vh;
+  width: 4vh;
+  height: 1.2vh;
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-jobs .jobs-contain .jobs-boxs .jobs-box .jobs-contain .jobs-content .jobs-value .value-contain .value-boxs .skill-bar .skill-inner {
+  position: relative;
+  width: 0.35vh;
+  height: 100%;
+  border-radius: 1.761px;
+  background: rgba(0, 0, 0, 0.53);
+}
+.gfxtrucker-main-contain .gfxtrucker-main-contents .gfxtrucker-content .content-jobs .jobs-contain .jobs-boxs .jobs-box .jobs-contain .jobs-content .jobs-value .value-contain .value-boxs .skill-bar .-active-skill {
+  border-radius: 1.761px;
+  background: #FFAE00;
+}
+.gfxtrucker-main-contain .gfxtrucker-bgeffect {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.gfxtrucker-main-contain .top-effect {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 43vh;
+  height: 1.8vh;
+  border-radius: 0px 0px 6.5px 6.5px;
+  background: linear-gradient(90deg, #FFAE00 3.3%, #BB8C28 99.09%);
+}/*# sourceMappingURL=style.css.map */

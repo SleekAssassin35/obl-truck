@@ -1,0 +1,6 @@
+{
+    "Lua.diagnostics.globals": [
+        "entityBlip"
+    ],
+    "liveServer.settings.port": 5501
+}
